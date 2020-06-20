@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://ftp.trumptwitterstuff.com
-        ftp-username: ${{ secrets.ftp_username }}
-        ftp-password: ${{ secrets.ftp_password }}
+        ftp-server: ftp://ftp.trumptwitterstuff.com/
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
