@@ -14,3 +14,4 @@ jobs:
         ftp-server: ftp://ftp.trumptwitterstuff.com/
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args:  --insecure
