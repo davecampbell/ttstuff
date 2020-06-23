@@ -11,6 +11,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://ftp.trumptwitterstuff.com/
+        ftp-server: sftp://ftp.trumptwitterstuff.com/public_html/
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args:  --insecure
